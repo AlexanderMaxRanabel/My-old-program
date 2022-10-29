@@ -1,0 +1,20 @@
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        int not= Convert.ToInt32(Console.ReadLine());
+        int not1= Convert.ToInt32(Console.ReadLine());
+        int not2= Convert.ToInt32(Console.ReadLine());
+        int sonuc = (not + not1 + not2) / 3;
+        if (sonuc > 80)
+            Console.WriteLine("A+");
+        else if (sonuc < 80 && sonuc > 60)
+            Console.WriteLine("A");
+        if(sonuc > 50 &&sonuc<60)
+            Console.WriteLine("B");
+        else if (sonuc < 50)
+            Console.WriteLine("F");
+    }
+}
